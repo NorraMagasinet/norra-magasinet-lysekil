@@ -174,7 +174,7 @@ const Index = () => {
               </ul>
             </div>
             <img
-              src={officeImg}
+              src={storageDetailImg}
               alt="Organiserat kallförråd med god belysning i Norra Magasinet"
               className="rounded-lg shadow-lg w-full h-72 object-cover"
             />
