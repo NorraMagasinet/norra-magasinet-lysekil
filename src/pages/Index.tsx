@@ -4,6 +4,7 @@ import heroImg from "@/assets/hero-harbor.jpg";
 import buildingImg from "@/assets/building-exterior.jpg";
 import officeImg from "@/assets/office-interior.jpg";
 import storageImg from "@/assets/storage-units.jpg";
+import storageDetailImg from "@/assets/storage-detail.jpg";
 
 const Index = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -173,7 +174,7 @@ const Index = () => {
               </ul>
             </div>
             <img
-              src={officeImg}
+              src={storageDetailImg}
               alt="Organiserat kallförråd med god belysning i Norra Magasinet"
               className="rounded-lg shadow-lg w-full h-72 object-cover"
             />
