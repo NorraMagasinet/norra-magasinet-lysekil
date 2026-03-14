@@ -4,6 +4,7 @@ import heroImg from "@/assets/hero-harbor.jpg";
 import buildingImg from "@/assets/building-exterior.jpg";
 import officeImg from "@/assets/office-interior.jpg";
 import storageImg from "@/assets/storage-units.jpg";
+import storageDetailImg from "@/assets/storage-detail.jpg";
 
 const Index = () => {
   const [submitted, setSubmitted] = useState(false);
