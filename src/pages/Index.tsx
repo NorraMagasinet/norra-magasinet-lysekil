@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
-import { MapPin, Clock, Car, Warehouse, ArrowRight, Send, CheckCircle, Ruler, Building2, Phone, Mail } from "lucide-react";
+import { MapPin, Clock, Car, Warehouse, ArrowRight, Send, CheckCircle, Ruler, Building2, Phone, Mail, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 import heroImg from "@/assets/hero-harbor.jpg";
 import buildingImg from "@/assets/building-exterior.jpg";
 import officeImg from "@/assets/office-interior.jpg";
@@ -8,10 +9,36 @@ import storageDetailImg from "@/assets/storage-detail.jpg";
 
 const Index = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const { data, error: fnError } = await supabase.functions.invoke("send-contact-email", {
+        body: {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          phone: formData.get("phone"),
+          interest: formData.get("interest"),
+          message: formData.get("message"),
+        },
+      });
+
+      if (fnError) throw fnError;
+      setSubmitted(true);
+    } catch (err: any) {
+      console.error("Contact form error:", err);
+      setError("Något gick fel. Försök igen eller kontakta oss via telefon.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
