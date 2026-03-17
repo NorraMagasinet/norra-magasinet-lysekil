@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} className="shrink-0 text-accent" />
-                <span>info@norramagasinet.se</span>
+                <span>jannerag64@gmail.com</span>
               </div>
             </div>
           </div>
