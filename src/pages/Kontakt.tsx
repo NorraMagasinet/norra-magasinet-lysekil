@@ -1,12 +1,39 @@
 import { useState, FormEvent } from "react";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const Kontakt = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const { error: fnError } = await supabase.functions.invoke("send-contact-email", {
+        body: {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          phone: formData.get("phone"),
+          interest: formData.get("interest"),
+          message: formData.get("message"),
+        },
+      });
+
+      if (fnError) throw fnError;
+      setSubmitted(true);
+    } catch (err: any) {
+      console.error("Contact form error:", err);
+      setError("Något gick fel. Försök igen eller kontakta oss via telefon.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -93,11 +120,15 @@ const Kontakt = () => {
                       placeholder="Beskriv kort vad du söker…"
                     />
                   </div>
+                  {error && (
+                    <p className="text-red-600 text-sm font-body">{error}</p>
+                  )}
                   <button
                     type="submit"
-                    className="w-full bg-accent text-accent-foreground font-body font-semibold px-6 py-3 rounded-md hover:bg-ocean-deep transition-colors flex items-center justify-center gap-2"
+                    disabled={loading}
+                    className="w-full bg-accent text-accent-foreground font-body font-semibold px-6 py-3 rounded-md hover:bg-ocean-deep transition-colors flex items-center justify-center gap-2 disabled:opacity-60"
                   >
-                    Skicka meddelande <Send size={18} />
+                    {loading ? <><Loader2 size={18} className="animate-spin" /> Skickar…</> : <>Skicka meddelande <Send size={18} /></>}
                   </button>
                 </form>
               )}
@@ -124,7 +155,7 @@ const Kontakt = () => {
                   </div>
                   <div>
                     <h3 className="font-body font-semibold text-foreground">E-post</h3>
-                    <p className="font-body text-sm text-muted-foreground">info@norramagasinet.se</p>
+                    <p className="font-body text-sm text-muted-foreground">jannerag64@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -133,7 +164,7 @@ const Kontakt = () => {
                   </div>
                   <div>
                     <h3 className="font-body font-semibold text-foreground">Telefon</h3>
-                    <p className="font-body text-sm text-muted-foreground">Kontakta oss för telefonnummer</p>
+                    <p className="font-body text-sm text-muted-foreground">070-621 02 29</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
