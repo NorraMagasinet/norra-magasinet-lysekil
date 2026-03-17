@@ -373,7 +373,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-body font-semibold text-foreground">E-post</h3>
-                  <p className="font-body text-sm text-muted-foreground">info@norramagasinet.se</p>
+                  <p className="font-body text-sm text-muted-foreground">jannerag64@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -382,7 +382,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-body font-semibold text-foreground">Telefon</h3>
-                  <p className="font-body text-sm text-muted-foreground">Kontakta oss för telefonnummer</p>
+                  <p className="font-body text-sm text-muted-foreground">070-621 02 29</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
