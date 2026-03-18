@@ -74,6 +74,7 @@ const Kontakt = () => {
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       required
                       className="w-full px-4 py-3 rounded-md border border-border bg-card font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                       placeholder="Ditt namn"
@@ -84,6 +85,7 @@ const Kontakt = () => {
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       required
                       className="w-full px-4 py-3 rounded-md border border-border bg-card font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                       placeholder="din@epost.se"
@@ -94,6 +96,7 @@ const Kontakt = () => {
                     <input
                       type="tel"
                       id="phone"
+                      name="phone"
                       className="w-full px-4 py-3 rounded-md border border-border bg-card font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                       placeholder="070-000 00 00"
                     />
@@ -102,6 +105,7 @@ const Kontakt = () => {
                     <label htmlFor="interest" className="block font-body text-sm font-medium text-foreground mb-1">Jag är intresserad av</label>
                     <select
                       id="interest"
+                      name="interest"
                       className="w-full px-4 py-3 rounded-md border border-border bg-card font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                     >
                       <option>Kontor</option>
@@ -114,6 +118,7 @@ const Kontakt = () => {
                     <label htmlFor="message" className="block font-body text-sm font-medium text-foreground mb-1">Meddelande</label>
                     <textarea
                       id="message"
+                      name="message"
                       rows={4}
                       required
                       className="w-full px-4 py-3 rounded-md border border-border bg-card font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40 resize-none"
