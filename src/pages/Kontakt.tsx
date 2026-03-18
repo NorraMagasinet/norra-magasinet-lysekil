@@ -74,6 +74,7 @@ const Kontakt = () => {
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       required
                       className="w-full px-4 py-3 rounded-md border border-border bg-card font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                       placeholder="Ditt namn"
