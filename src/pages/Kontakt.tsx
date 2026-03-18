@@ -118,6 +118,7 @@ const Kontakt = () => {
                     <label htmlFor="message" className="block font-body text-sm font-medium text-foreground mb-1">Meddelande</label>
                     <textarea
                       id="message"
+                      name="message"
                       rows={4}
                       required
                       className="w-full px-4 py-3 rounded-md border border-border bg-card font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40 resize-none"
