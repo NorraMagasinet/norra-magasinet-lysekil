@@ -105,6 +105,7 @@ const Kontakt = () => {
                     <label htmlFor="interest" className="block font-body text-sm font-medium text-foreground mb-1">Jag är intresserad av</label>
                     <select
                       id="interest"
+                      name="interest"
                       className="w-full px-4 py-3 rounded-md border border-border bg-card font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/40"
                     >
                       <option>Kontor</option>
