@@ -49,7 +49,7 @@ serve(async (req) => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Norra Magasinet <onboarding@resend.dev>",
+        from: "Norra Magasinet <info@norramagasinetlysekil.se>",
         to: [RECIPIENT_EMAIL],
         subject: `Kontaktförfrågan från ${name}`,
         html: htmlBody,
