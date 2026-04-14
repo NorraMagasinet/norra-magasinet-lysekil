@@ -17,7 +17,7 @@ const Lokaler = () => {
               Lokaler & Förråd
             </h1>
             <p className="font-body text-lg text-primary-foreground/85 mt-3 max-w-xl">
-              Kontorslokaler och förråd i Norra Hamnen, Lysekil – flexibla ytor för företag och privatpersoner., Lysekil – flexibla ytor för företag och privatpersoner.
+              Kontorslokaler och förråd i Norra Hamnen, Lysekil – flexibla ytor för företag och privatpersoner.
             </p>
           </div>
         </div>
