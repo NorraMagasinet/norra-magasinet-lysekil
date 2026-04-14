@@ -28,7 +28,7 @@ const OmOss = () => {
             <p>
               Norra Magasinet är beläget i Norra Hamnen i Lysekil – en plats med stark koppling
               till havet och västkustens tradition. Fastigheten rymmer både kontorslokaler och
-              kallförråd och är öppen för såväl företag som privatpersoner.
+              förråd och är öppen för såväl företag som privatpersoner. för såväl företag som privatpersoner.
             </p>
             <p>
               Vi tror på en enkel och personlig uthyrning. Hos oss möter du en fastighetsägare

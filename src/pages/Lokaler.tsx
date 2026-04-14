@@ -17,7 +17,7 @@ const Lokaler = () => {
               Lokaler & Förråd
             </h1>
             <p className="font-body text-lg text-primary-foreground/85 mt-3 max-w-xl">
-              Kontorslokaler och kallförråd i Norra Hamnen, Lysekil – flexibla ytor för företag och privatpersoner.
+              Kontorslokaler och förråd i Norra Hamnen, Lysekil – flexibla ytor för företag och privatpersoner., Lysekil – flexibla ytor för företag och privatpersoner.
             </p>
           </div>
         </div>
@@ -69,18 +69,18 @@ const Lokaler = () => {
         </div>
       </section>
 
-      {/* Kallförråd */}
+      {/* Förråd */}
       <section className="bg-sand-gradient section-padding">
         <div className="container-narrow">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <img src={storageImg} alt="Kallförråd i Norra Magasinet" className="rounded-lg shadow-lg w-full h-80 object-cover md:order-1 order-2" />
+            <img src={storageImg} alt="Förråd i Norra Magasinet" className="rounded-lg shadow-lg w-full h-80 object-cover md:order-1 order-2" />
             <div className="md:order-2 order-1">
               <span className="font-body text-sm font-semibold text-accent uppercase tracking-wider">Hyra förråd i Lysekil</span>
               <h2 className="font-heading text-3xl font-bold text-foreground mt-2 mb-4">
-                Kallförråd för alla behov
+                Förråd för alla behov
               </h2>
               <p className="font-body text-muted-foreground leading-relaxed mb-4">
-                Våra kallförråd varierar i storlek från 15 till 70 kvm och passar dig som behöver
+                Våra förråd varierar i storlek från 15 till 70 kvm och passar dig som behöver i storlek från 15 till 70 kvm och passar dig som behöver
                 extra utrymme – oavsett om det gäller säsongsvaror, verktyg, inventarier eller
                 e-handelslager.
               </p>

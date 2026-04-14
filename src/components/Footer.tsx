@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <h3 className="font-heading text-xl font-bold mb-4">Norra Magasinet</h3>
             <p className="font-body text-primary-foreground/70 text-sm leading-relaxed">
-              Kontorslokaler, verksamhetslokaler, garage och förråd i Norra Hamnen, Lysekil.
+              Kontorslokaler, verksamhetslokaler, garage och förråd i Norra Hamnen, Lysekil., Lysekil.
               Ett attraktivt läge vid havet med närhet till allt du behöver.
             </p>
           </div>
