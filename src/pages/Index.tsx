@@ -93,7 +93,7 @@ const Index = () => {
                 <p>
                   Norra Magasinet ligger på Norra Hamngatan 6 i Lysekil, mitt i det populära
                   hamnområdet. Fastigheten rymmer kontorslokaler, verksamhetslokaler, garage
-                  och kallförråd – öppet för både företag och privatpersoner.
+                  och förråd – öppet för både företag och privatpersoner. företag och privatpersoner.
                 </p>
                 <p>
                   Vi tror på en enkel och personlig uthyrning. Hos oss möter du en
@@ -181,14 +181,14 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Kallförråd */}
+          {/* Förråd */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
-                Kallförråd
+                Förråd
               </h3>
               <p className="font-body text-muted-foreground leading-relaxed mb-4">
-                Behöver du extra utrymme? Våra kallförråd varierar från 15 till 70 kvm
+                Behöver du extra utrymme? Våra förråd varierar från 15 till 70 kvm
                 och passar allt från säsongsförvaring till e-handelslager. Du har tillgång
                 dygnet runt, året om.
               </p>
@@ -202,7 +202,7 @@ const Index = () => {
             </div>
             <img
               src={storageDetailImg}
-              alt="Organiserat kallförråd med god belysning i Norra Magasinet"
+              alt="Organiserat förråd med god belysning i Norra Magasinet"
               className="rounded-lg shadow-lg w-full h-72 object-cover"
             />
           </div>
