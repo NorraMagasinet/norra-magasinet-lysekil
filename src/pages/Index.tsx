@@ -57,7 +57,7 @@ const Index = () => {
               Lokaler &amp; förråd i hjärtat av Lysekil
             </h1>
             <p className="font-body text-lg md:text-xl text-primary-foreground/85 mb-8 animate-fade-up animation-delay-200 leading-relaxed">
-              Norra Magasinet erbjuder kontorslokaler, verksamhetslokaler, garage och kallförråd
+              Norra Magasinet erbjuder kontorslokaler, verksamhetslokaler, garage och förråd
               i Norra Hamnen – ett av Lysekils mest attraktiva och levande lägen.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-up animation-delay-400">
