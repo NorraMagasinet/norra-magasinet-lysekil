@@ -55,7 +55,7 @@ const Index = () => {
           aria-hidden="true"
           className="absolute z-10 rounded-full border-4 border-red-600 pointer-events-none"
           style={{
-            left: "80%",
+            left: "86%",
             top: "67%",
             width: "70px",
             height: "70px",
