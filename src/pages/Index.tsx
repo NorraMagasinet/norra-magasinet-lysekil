@@ -78,6 +78,21 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Tillfälligt erbjudande */}
+      <section className="bg-accent text-accent-foreground">
+        <div className="container-narrow px-6 py-4 flex items-center justify-center gap-3 text-center">
+          <span className="inline-flex items-center justify-center rounded-full bg-accent-foreground/15 px-3 py-1 text-xs font-body font-semibold uppercase tracking-wider shrink-0">
+            Tillfälligt erbjudande
+          </span>
+          <p className="font-body text-sm md:text-base font-medium">
+            Garage ledigt under <strong>juli och augusti</strong> – perfekt för bilen eller verksamhet under turistsäsongen.{" "}
+            <a href="#kontakt" className="underline underline-offset-2 hover:no-underline font-semibold">
+              Hör av dig!
+            </a>
+          </p>
+        </div>
+      </section>
+
       {/* Om Norra Magasinet – Bild B: exteriör */}
       <section id="om" className="section-padding">
         <div className="container-narrow">
