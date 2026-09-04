@@ -50,9 +50,34 @@ const Index = () => {
           alt="Norra Hamnen i Lysekil med färgglada sjöbodar, fiskebåtar och havet i bakgrunden"
           className="absolute inset-0 w-full h-full object-cover"
         />
+        {/* Röd inringning av garageport */}
+        <div
+          aria-hidden="true"
+          className="absolute z-10 rounded-full border-4 border-red-600 pointer-events-none"
+          style={{
+            left: "86%",
+            top: "67%",
+            width: "70px",
+            height: "70px",
+            transform: "translate(-50%, -50%)",
+            boxShadow: "0 0 0 2px rgba(255,255,255,0.35)",
+          }}
+        />
         <div className="hero-overlay absolute inset-0" />
         <div className="relative z-10 container-narrow section-padding">
           <div className="max-w-2xl">
+            {/* Garage ledigt – placerat i "himlen" ovanför rubriken */}
+            <div className="mb-6 animate-fade-up">
+              <span className="inline-flex items-center justify-center rounded-full bg-accent text-accent-foreground px-4 py-1.5 text-sm font-body font-semibold uppercase tracking-wider mb-3">
+                Garage
+              </span>
+              <p className="font-body text-xl md:text-2xl text-primary-foreground font-medium leading-snug">
+                Garage ledigt – uthyres omgående.{" "}
+                <a href="#kontakt" className="underline underline-offset-4 hover:no-underline font-semibold">
+                  Hör av dig!
+                </a>
+              </p>
+            </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 animate-fade-up">
               Lokaler &amp; förråd i hjärtat av Lysekil
             </h1>
