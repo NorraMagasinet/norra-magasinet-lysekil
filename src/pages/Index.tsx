@@ -50,19 +50,6 @@ const Index = () => {
           alt="Norra Hamnen i Lysekil med färgglada sjöbodar, fiskebåtar och havet i bakgrunden"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        {/* Röd inringning av garageport */}
-        <div
-          aria-hidden="true"
-          className="absolute z-10 rounded-full border-4 border-red-600 pointer-events-none"
-          style={{
-            left: "86%",
-            top: "67%",
-            width: "70px",
-            height: "70px",
-            transform: "translate(-50%, -50%)",
-            boxShadow: "0 0 0 2px rgba(255,255,255,0.35)",
-          }}
-        />
         <div className="hero-overlay absolute inset-0" />
         <div className="relative z-10 container-narrow section-padding">
           <div className="max-w-2xl">
