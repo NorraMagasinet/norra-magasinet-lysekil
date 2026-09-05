@@ -59,10 +59,7 @@ const Index = () => {
                 Garage
               </span>
               <p className="font-body text-xl md:text-2xl text-primary-foreground font-medium leading-snug">
-                Garage ledigt – uthyres omgående.{" "}
-                <a href="#kontakt" className="underline underline-offset-4 hover:no-underline font-semibold">
-                  Hör av dig!
-                </a>
+                Garage ledigt – uthyres omgående.
               </p>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 animate-fade-up">
